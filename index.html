@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5 - JS Basics & DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Assignment #5: JavaScript Basics & DOM</h1>
+        <section class="card">
+            <h2>User Profile Settings</h2>
+            <form id="profileForm">
+                <div class="form-group">
+                    <label for="usernameInput">Username:</label>
+                    <input type="text" id="usernameInput" placeholder="Enter name" required>
+                </div>
+                <div class="form-group">
+                    <label for="birthYearInput">Birth Year:</label>
+                    <input type="number" id="birthYearInput" placeholder="Enter birth year" required>
+                </div>
+                <button type="submit" id="updateProfileBtn">Create / Update Profile</button>
+            </form>
+
+            <div class="profile-display" id="profileDisplay">
+                <h3>Current Profile Info:</h3>
+                <p><strong>Name:</strong> <span id="displayName">-</span></p>
+                <p><strong>Birth Year:</strong> <span id="displayBirthYear">-</span></p>
+                <p><strong>Age:</strong> <span id="displayAge">-</span></p>
+                <p><strong>Age in Months:</strong> <span id="displayAgeMonths">-</span></p>
+                <p><strong>Is Developer:</strong> <span id="displayIsDev">-</span></p>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Hobbies / Tasks List</h2>
+            <div class="list-controls">
+                <input type="text" id="itemInput" placeholder="Enter new item">
+                <button id="addItemBtn">Add Item</button>
+                <button id="removeItemBtn" class="btn-danger">Remove Item</button>
+            </div>
+
+            <ul id="itemList">
+            </ul>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
